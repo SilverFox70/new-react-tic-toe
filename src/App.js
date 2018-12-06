@@ -1,8 +1,23 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import css from '@emotion/css/macro';
+import styled from '@emotion/styled/macro';
+
+const myCSS = css`
+  color: red;
+  padding: 1rem;
+`;
+
+const myDiv = styled.div`
+  background-color: green;
+`;
 
 class App extends Component {
+  componentWillMount() {
+    console.log('myCSS', myCSS);
+  }
+
   render() {
     return (
       <div className="App">
@@ -20,6 +35,12 @@ class App extends Component {
             Learn React
           </a>
         </header>
+        <div className={myCSS}>
+          Test Div
+        </div>
+        <myDiv>
+          Styled Div
+        </myDiv>
       </div>
     );
   }

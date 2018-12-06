@@ -1,0 +1,10 @@
+{
+  "env": {
+    "production": {
+      "plugins": ["emotion", "babel-plugin-macros"]
+    },
+    "development": {
+      "plugins": [["emotion", { "sourceMap": true }], "babel-plugin-macros"]
+    }
+  }
+}
