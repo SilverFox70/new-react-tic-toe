@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/index.css';
 import styled from '@emotion/styled/macro';
 import Square from './Square';
 import calculateWinner from './calculateWinner';
