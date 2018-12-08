@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './styles/index.css';
 import styled from '@emotion/styled/macro';
-import Board from './Board';
+import Board from './components/Board';
 
 class Game extends React.Component {
   render() {
