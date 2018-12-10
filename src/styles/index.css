@@ -19,8 +19,8 @@ ol, ul {
 
 .game {
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  /*flex-direction: row;*/
 }
 
 .game-board {
@@ -28,5 +28,5 @@ ol, ul {
 }
 
 .game-info {
-  margin-left: 20px;
+  margin: 0 auto;
 }
